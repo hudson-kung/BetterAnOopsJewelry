@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart | BetterAnOops</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="BetterAnOops home">
+        <span class="brand-mark">B</span>
+        <span>BetterAnOops</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero compact">
+        <p class="eyebrow">Your Cart</p>
+        <h1>Review your BetterAnOops picks.</h1>
+        <p>Check your items, remove anything you changed your mind about, then head to checkout.</p>
+      </section>
+
+      <section class="section cart-section">
+        <div class="cart-layout">
+          <div class="cart-items" id="cartItems" aria-live="polite"></div>
+
+          <aside class="cart-summary">
+            <h2>Order Summary</h2>
+            <div class="summary-row">
+              <span>Items</span>
+              <strong id="summaryItems">0</strong>
+            </div>
+            <div class="summary-row">
+              <span>Subtotal</span>
+              <strong id="summarySubtotal">$0</strong>
+            </div>
+            <p>Shipping and taxes can be added when real checkout is connected.</p>
+            <button class="button primary checkout-button" type="button" id="checkoutButton">Checkout</button>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>BetterAnOops</span>
+      <span>Reasonable jewelry for brighter everyday style.</span>
+    </footer>
+    <a class="floating-cart" href="cart.html" aria-label="Shopping cart">
+      <span class="cart-icon" aria-hidden="true"></span>
+      <span id="bagCount">0</span>
+    </a>
+    <div class="toast" id="toast" role="status" aria-live="polite">Added to bag</div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | BetterAnOops</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="BetterAnOops home">
+        <span class="brand-mark">B</span>
+        <span>BetterAnOops</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html" aria-current="page">About Us</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section about-section page-section">
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=900&q=80" alt="Jewelry tools and gold chains on a workbench" />
+        </div>
+        <div class="about-copy">
+          <p class="eyebrow">About Us</p>
+          <h1>BetterAnOops is for the "I deserve something cute" moment.</h1>
+          <p>
+            We believe jewelry should feel special without becoming a whole
+            financial decision. Our collection focuses on easy styling, fair
+            prices, and pieces that make simple outfits look intentional.
+          </p>
+          <p>
+            The name BetterAnOops is a wink at happy accidents: the last-minute
+            gift, the impulse treat, the accessory that unexpectedly becomes
+            your favorite.
+          </p>
+          <a class="button primary" href="shop.html">Browse the Shop</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>BetterAnOops</span>
+      <span>Reasonable jewelry for brighter everyday style.</span>
+    </footer>
+    <a class="floating-cart" href="cart.html" aria-label="Shopping cart">
+      <span class="cart-icon" aria-hidden="true"></span>
+      <span id="bagCount">0</span>
+    </a>
+    <div class="toast" id="toast" role="status" aria-live="polite">Added to bag</div>
+    <script src="script.js"></script>
+  </body>
+</html>

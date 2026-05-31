@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BetterAnOops | Reasonable Jewelry</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="BetterAnOops home">
+        <span class="brand-mark">B</span>
+        <span>BetterAnOops</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Affordable shine, everyday wear</p>
+          <h1>Reasonable jewelry that still feels like a little event.</h1>
+          <p>
+            BetterAnOops makes polished, giftable pieces for real budgets:
+            hoops, chains, rings, and charms designed to dress up the day
+            without dressing down your wallet.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="shop.html">Shop Jewelry</a>
+            <a class="button secondary" href="about.html">Our Story</a>
+          </div>
+        </div>
+        <div class="hero-gallery" aria-label="Featured jewelry preview">
+          <img
+            class="gallery-main"
+            src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=900&q=80"
+            alt="Gold necklace on a soft neutral display"
+          />
+          <img
+            class="gallery-float top"
+            src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?auto=format&fit=crop&w=600&q=80"
+            alt="Stacked rings with gemstone accents"
+          />
+          <img
+            class="gallery-float bottom"
+            src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=600&q=80"
+            alt="Delicate earrings on a jewelry tray"
+          />
+        </div>
+      </section>
+
+      <section class="value-strip" aria-label="Store highlights">
+        <article>
+          <strong>Under $50 Favorites</strong>
+          <span>Gift-ready pieces without the luxury markup.</span>
+        </article>
+        <article>
+          <strong>Everyday Materials</strong>
+          <span>Gold tone, silver tone, stainless steel, and plated staples.</span>
+        </article>
+        <article>
+          <strong>Simple Returns</strong>
+          <span>Easy exchanges on unworn pieces within 30 days.</span>
+        </article>
+      </section>
+
+      <section class="section preview-section">
+        <div class="section-heading">
+          <p class="eyebrow">Featured</p>
+          <h2>Start with pretty staples.</h2>
+          <p>
+            Visit the shop for placeholder products you can replace with your
+            real BetterAnOops inventory.
+          </p>
+        </div>
+        <div class="feature-row">
+          <a class="feature-tile" href="shop.html">
+            <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=700&q=80" alt="Layered gold necklace" />
+            <span>Necklaces from $28</span>
+          </a>
+          <a class="feature-tile" href="shop.html">
+            <img src="https://images.unsplash.com/photo-1630019852942-f89202989a59?auto=format&fit=crop&w=700&q=80" alt="Small hoop earrings" />
+            <span>Hoops from $18</span>
+          </a>
+          <a class="feature-tile" href="shop.html">
+            <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=700&q=80" alt="Minimal gold ring" />
+            <span>Rings from $24</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>BetterAnOops</span>
+      <span>Reasonable jewelry for brighter everyday style.</span>
+    </footer>
+
+    <a class="floating-cart" href="cart.html" aria-label="Shopping cart">
+      <span class="cart-icon" aria-hidden="true"></span>
+      <span id="bagCount">0</span>
+    </a>
+
+    <div class="toast" id="toast" role="status" aria-live="polite">Added to bag</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
