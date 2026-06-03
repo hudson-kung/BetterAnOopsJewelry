@@ -15,102 +15,17 @@ const productDetail = document.querySelector("#productDetail");
 const cartKey = "betterAnOopsCart";
 let toastTimer;
 
-const products = [
-  {
-    id: "sunny-layer-chain",
-    name: "Sunny Layer Chain",
-    price: 28,
-    category: "Necklace",
-    description: "Lightweight layered chain with a warm gold finish.",
-    image: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=900&q=80",
-    pictures: [
-      "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=900&q=80"
-    ],
-    colors: ["Gold", "Rose Gold", "Silver"],
-    stats: { Material: "Gold-tone stainless steel", Length: "16-18 in adjustable", Weight: "Lightweight", Care: "Avoid water and perfume" }
-  },
-  {
-    id: "everyday-signet",
-    name: "Everyday Signet",
-    price: 24,
-    category: "Ring",
-    description: "A clean signet silhouette for stacking or solo wear.",
-    image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=900&q=80",
-    pictures: [
-      "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1603561596112-0a132b757442?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?auto=format&fit=crop&w=900&q=80"
-    ],
-    colors: ["Gold", "Silver", "Black Enamel"],
-    stats: { Material: "Plated brass", Sizes: "6, 7, 8, 9", Finish: "Polished", Fit: "True to size" }
-  },
-  {
-    id: "tiny-weekend-hoops",
-    name: "Tiny Weekend Hoops",
-    price: 18,
-    category: "Earrings",
-    description: "Easy, polished hoops made for repeat outfits.",
-    image: "https://images.unsplash.com/photo-1630019852942-f89202989a59?auto=format&fit=crop&w=900&q=80",
-    pictures: [
-      "https://images.unsplash.com/photo-1630019852942-f89202989a59?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1589128777073-263566ae5e4d?auto=format&fit=crop&w=900&q=80"
-    ],
-    colors: ["Gold", "Silver"],
-    stats: { Material: "Hypoallergenic steel posts", Diameter: "14 mm", Closure: "Hinged snap", Weight: "Ultra-light pair" }
-  },
-  {
-    id: "soft-gleam-bracelet",
-    name: "Soft Gleam Bracelet",
-    price: 22,
-    category: "Bracelet",
-    description: "Subtle shine with a comfortable adjustable clasp.",
-    image: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=900&q=80",
-    pictures: [
-      "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=900&q=80"
-    ],
-    colors: ["Gold", "Silver", "Champagne"],
-    stats: { Material: "Stainless steel chain", Length: "6.5-8 in adjustable", Closure: "Lobster clasp", Style: "Low-profile shine" }
-  },
-  {
-    id: "fresh-pearl-drop",
-    name: "Fresh Pearl Drop",
-    price: 32,
-    category: "Necklace",
-    description: "A soft pearl accent for date nights and desk days.",
-    image: "https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=900&q=80",
-    pictures: [
-      "https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=900&q=80"
-    ],
-    colors: ["Pearl", "Gold", "Silver"],
-    stats: { Material: "Faux pearl and plated chain", Pendant: "8 mm pearl", Length: "18 in", Mood: "Soft and classic" }
-  },
-  {
-    id: "mini-mood-studs",
-    name: "Mini Mood Studs",
-    price: 16,
-    category: "Earrings",
-    description: "Small gemstone-style studs for a tiny color pop.",
-    image: "https://images.unsplash.com/photo-1589128777073-263566ae5e4d?auto=format&fit=crop&w=900&q=80",
-    pictures: [
-      "https://images.unsplash.com/photo-1589128777073-263566ae5e4d?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1630019852942-f89202989a59?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=900&q=80"
-    ],
-    colors: ["Emerald", "Blush", "Clear"],
-    stats: { Material: "Glass stone and steel post", Size: "5 mm", Backing: "Butterfly back", BestFor: "Everyday color" }
-  }
-];
+const products = [];
 
 const findProduct = (id) => products.find((product) => product.id === id);
 
-const getCart = () => JSON.parse(window.localStorage.getItem(cartKey) || "[]");
+const getCart = () =>
+  JSON.parse(window.localStorage.getItem(cartKey) || "[]")
+    .map((item) => {
+      const product = findProduct(item.id);
+      return product ? { ...product, quantity: item.quantity } : null;
+    })
+    .filter(Boolean);
 
 const saveCart = (cart) => {
   window.localStorage.setItem(cartKey, JSON.stringify(cart));
@@ -153,8 +68,8 @@ const renderCart = () => {
     cartItems.innerHTML = `
       <div class="empty-cart">
         <h2>Your cart is empty.</h2>
-        <p>Add a few reasonable-rate favorites from the shop.</p>
-        <a class="button primary" href="shop.html">Shop Jewelry</a>
+        <p>There are no products listed right now.</p>
+        <a class="button primary" href="shop.html">View Shop</a>
       </div>
     `;
     return;
@@ -214,7 +129,7 @@ const renderProductDetail = () => {
     productDetail.innerHTML = `
       <div class="empty-cart">
         <h1>We could not find that item.</h1>
-        <p>Head back to the shop and choose another BetterAnOops piece.</p>
+        <p>No products are listed right now.</p>
         <a class="button primary" href="shop.html">Back to Shop</a>
       </div>
     `;

@@ -60,21 +60,17 @@ textarea {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  width: clamp(78px, 9vw, 112px);
   font-weight: 800;
   letter-spacing: 0;
 }
 
-.brand-mark {
-  display: grid;
-  width: 36px;
-  height: 36px;
-  place-items: center;
-  color: white;
-  background: var(--rose-dark);
-  border-radius: 50%;
-  font-family: Georgia, serif;
-  font-size: 1.2rem;
+.brand-logo {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 96px;
+  object-fit: contain;
 }
 
 .site-nav {
@@ -880,9 +876,8 @@ textarea {
     gap: 10px;
   }
 
-  .brand span:last-child {
-    max-width: 120px;
-    line-height: 1.05;
+  .brand {
+    width: clamp(68px, 20vw, 92px);
   }
 
   .floating-cart {
