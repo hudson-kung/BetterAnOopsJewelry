@@ -15,7 +15,88 @@ const productDetail = document.querySelector("#productDetail");
 const cartKey = "betterAnOopsCart";
 let toastTimer;
 
-const products = [];
+const products = [
+  {
+    id: "celona-onyx-pearl-hoops",
+    name: "CELONA Onyx Pearl Hoops",
+    price: 399,
+    category: "Earrings",
+    description: "A snug double-oval hoop design handcrafted in Kyoto-inspired Japanese aesthetic artisanship, finished with black onyx and freshwater pearl accents.",
+    image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=900&q=80",
+    pictures: [
+      "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1630019852942-f89202989a59?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1589128777073-263566ae5e4d?auto=format&fit=crop&w=900&q=80"
+    ],
+    colors: ["Gold", "Silver"],
+    stats: {
+      Material: "Brass, silver, yellow gold",
+      Gemstone: "Black onyx and freshwater pearl",
+      Made: "Handcrafted in Japan",
+      Shipping: "Ships from California"
+    }
+  },
+  {
+    id: "fifs-chrysocolla-stackable-ring",
+    name: "FIFS Chrysocolla Stackable Ring",
+    price: 248.3,
+    category: "Ring",
+    description: "An adjustable stackable ring handcrafted in Kyoto-inspired Japanese artisanship, pairing chrysocolla, malachite, and Swarovski crystal accents in an 18K gold look.",
+    image: "https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?auto=format&fit=crop&w=900&q=80",
+    pictures: [
+      "https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1603561596112-0a132b757442?auto=format&fit=crop&w=900&q=80"
+    ],
+    colors: ["Gold", "Green", "Blue"],
+    stats: {
+      Material: "Brass, silver, yellow gold",
+      Gemstone: "Chrysocolla and malachite",
+      Fit: "Adjustable",
+      Made: "Handcrafted in Japan"
+    }
+  },
+  {
+    id: "fifs-rose-quartz-stackable-ring",
+    name: "FIFS Rose Quartz Stackable Ring",
+    price: 284.3,
+    category: "Ring",
+    description: "A soft pastel adjustable stackable ring handcrafted in Kyoto-inspired Japanese artisanship, pairing rose quartz with gray-toned druzy agate.",
+    image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=900&q=80",
+    pictures: [
+      "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1603561596112-0a132b757442?auto=format&fit=crop&w=900&q=80"
+    ],
+    colors: ["Gold", "Pink", "Gray"],
+    stats: {
+      Material: "Brass, silver, yellow gold",
+      Gemstone: "Rose quartz and druzy agate",
+      Fit: "Adjustable",
+      Made: "Handcrafted in Japan"
+    }
+  },
+  {
+    id: "fifs-oyster-turquoise-stackable-ring",
+    name: "FIFS Oyster Turquoise Ring",
+    price: 363.3,
+    category: "Ring",
+    description: "A handcrafted Kyoto-inspired stacking birthstone ring featuring oyster turquoise, copper turquoise, and a pointed gold-tone silhouette.",
+    image: "https://images.unsplash.com/photo-1603561596112-0a132b757442?auto=format&fit=crop&w=900&q=80",
+    pictures: [
+      "https://images.unsplash.com/photo-1603561596112-0a132b757442?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=900&q=80"
+    ],
+    colors: ["Gold", "Turquoise", "Champagne"],
+    stats: {
+      Material: "Brass, silver, yellow gold",
+      Gemstone: "Oyster turquoise and copper turquoise",
+      Fit: "Adjustable",
+      Made: "Handcrafted in Japan"
+    }
+  }
+];
 
 const findProduct = (id) => products.find((product) => product.id === id);
 
