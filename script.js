@@ -17,6 +17,176 @@ let toastTimer;
 
 const products = [
   {
+    id: "corby-giant-ball-chain-bracelet",
+    name: "CORBY Giant Ball Chain Bracelet",
+    price: 456.3,
+    category: "Bracelet",
+    description: "A 100% handcrafted Kyoto-made 18K gold plated giant ball chain connector bracelet designed as a bold stacking piece for the wrist.",
+    image: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=900&q=80",
+    pictures: [
+      "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=900&q=80"
+    ],
+    colors: ["Gold", "Silver"],
+    stats: {
+      Material: "Brass, silver, yellow gold",
+      Finish: "18K gold plated",
+      Size: "Medium, 15-16 cm wrist circumference",
+      Made: "Handcrafted in Kyoto, Japan",
+      Shipping: "Ships from California"
+    }
+  },
+  {
+    id: "ciara-pink-swarovski-oval-earrings",
+    name: "CIARA Pink Swarovski Oval Earrings",
+    price: 399,
+    category: "Earrings",
+    description: "A 100% handcrafted Kyoto-made pair of oval geometry earrings with pink and lilac Swarovski crystal set in a sleek silver metal frame.",
+    image: "https://images.unsplash.com/photo-1589128777073-263566ae5e4d?auto=format&fit=crop&w=900&q=80",
+    pictures: [
+      "https://images.unsplash.com/photo-1589128777073-263566ae5e4d?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1630019852942-f89202989a59?auto=format&fit=crop&w=900&q=80"
+    ],
+    colors: ["Silver", "Pink", "Lilac"],
+    stats: {
+      Material: "Brass, silver, titanium",
+      Gemstone: "Pink and lilac Swarovski crystal",
+      Style: "Oval geometry ear climber",
+      Made: "Handcrafted in Kyoto, Japan",
+      Shipping: "Ships from California"
+    }
+  },
+  {
+    id: "ch-malachite-howlite-ear-cuff",
+    name: "CH Malachite Howlite Ear Cuff",
+    price: 243.3,
+    category: "Earrings",
+    description: "A 100% handcrafted Kyoto-made ear cuff with green malachite or howlite marble stone paired with sparkling Swarovski crystal accents.",
+    image: "https://images.unsplash.com/photo-1630019852942-f89202989a59?auto=format&fit=crop&w=900&q=80",
+    pictures: [
+      "https://images.unsplash.com/photo-1630019852942-f89202989a59?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1589128777073-263566ae5e4d?auto=format&fit=crop&w=900&q=80"
+    ],
+    colors: ["Gold", "Green", "White"],
+    stats: {
+      Material: "Brass, silver, yellow gold",
+      Gemstone: "Green malachite or howlite marble stone",
+      Accent: "Swarovski crystal",
+      Made: "Handcrafted in Kyoto, Japan",
+      Shipping: "Ships from California"
+    }
+  },
+  {
+    id: "rck-padlock-swarovski-stud-earrings",
+    name: "RCK Padlock Swarovski Stud Earrings",
+    price: 363.3,
+    category: "Earrings",
+    description: "A 100% handcrafted Kyoto-made pair of compact padlock stud earrings with Swarovski crystal accents and a snug gold/silver silhouette.",
+    image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=900&q=80",
+    pictures: [
+      "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1589128777073-263566ae5e4d?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1630019852942-f89202989a59?auto=format&fit=crop&w=900&q=80"
+    ],
+    colors: ["Gold", "Silver"],
+    stats: {
+      Material: "Brass, silver, titanium, yellow gold",
+      Accent: "Swarovski crystal",
+      Style: "Padlock stud earrings",
+      Made: "Handcrafted in Kyoto, Japan",
+      Shipping: "Ships from California"
+    }
+  },
+  {
+    id: "fifs-thulite-adjustable-ring",
+    name: "FIFS Thulite Adjustable Ring",
+    price: 258.3,
+    category: "Ring",
+    description: "A 100% handcrafted Kyoto-made 18K gold plated adjustable ring with thulite, pink chalcedony tones, and light green Swarovski crystal accents.",
+    image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=900&q=80",
+    pictures: [
+      "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1603561596112-0a132b757442?auto=format&fit=crop&w=900&q=80"
+    ],
+    colors: ["Gold", "Pink", "Light Green"],
+    stats: {
+      Material: "Brass, yellow gold",
+      Gemstone: "Thulite and pink chalcedony",
+      Accent: "Light green Swarovski crystal",
+      Fit: "Adjustable",
+      Made: "Handcrafted in Kyoto, Japan",
+      Shipping: "Ships from California"
+    }
+  },
+  {
+    id: "fifs-morganite-swarovski-ring",
+    name: "FIFS Morganite Swarovski Ring",
+    price: 248.3,
+    category: "Ring",
+    description: "A 100% handcrafted Kyoto-made adjustable ring with rose pink morganite and clear Swarovski crystal accents in an 18K gold plated look.",
+    image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=900&q=80",
+    pictures: [
+      "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1603561596112-0a132b757442?auto=format&fit=crop&w=900&q=80"
+    ],
+    colors: ["Gold", "Rose Pink", "Clear"],
+    stats: {
+      Material: "Brass, yellow gold",
+      Gemstone: "Morganite",
+      Accent: "Clear Swarovski crystal",
+      Fit: "Adjustable",
+      Made: "Handcrafted in Kyoto, Japan",
+      Shipping: "Ships from California"
+    }
+  },
+  {
+    id: "fifs-blue-lace-swarovski-ring",
+    name: "FIFS Blue Lace Swarovski Ring",
+    price: 248.3,
+    category: "Ring",
+    description: "A 100% handcrafted Kyoto-made adjustable ring featuring blue lace agate, Swarovski crystal accents, and a refined gold-tone silhouette.",
+    image: "https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?auto=format&fit=crop&w=900&q=80",
+    pictures: [
+      "https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1603561596112-0a132b757442?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=900&q=80"
+    ],
+    colors: ["Gold", "Baby Blue", "Silver"],
+    stats: {
+      Material: "Brass, silver, yellow gold",
+      Gemstone: "Blue lace agate and Swarovski crystal",
+      Fit: "Adjustable",
+      Made: "Handcrafted in Kyoto, Japan",
+      Shipping: "Ships from California"
+    }
+  },
+  {
+    id: "fifs-astrophyllite-swarovski-ring",
+    name: "FIFS Astrophyllite Swarovski Ring",
+    price: 248.3,
+    category: "Ring",
+    description: "A 100% handcrafted Kyoto-made adjustable ring featuring astrophyllite stone with navy Swarovski rhinestone crystal accents in a silver band.",
+    image: "https://images.unsplash.com/photo-1603561596112-0a132b757442?auto=format&fit=crop&w=900&q=80",
+    pictures: [
+      "https://images.unsplash.com/photo-1603561596112-0a132b757442?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=900&q=80"
+    ],
+    colors: ["Silver", "Navy", "Gold"],
+    stats: {
+      Material: "Brass, silver, yellow gold",
+      Gemstone: "Astrophyllite and navy Swarovski rhinestone",
+      Fit: "Adjustable",
+      Made: "Handcrafted in Kyoto, Japan",
+      Shipping: "Ships from California"
+    }
+  },
+  {
     id: "celona-onyx-pearl-hoops",
     name: "CELONA Onyx Pearl Hoops",
     price: 399,
